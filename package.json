@@ -11,6 +11,11 @@
     "test": "tap",
     "test:update": "tap --snapshot"
   },
+  "files": [
+    "lib",
+    "cli.js",
+    "index.js"
+  ],
   "main": "index.js",
   "dependencies": {
     "@babel/parser": "^7.24.0",
