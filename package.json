@@ -1,0 +1,26 @@
+{
+  "name": "@barelyhuman/mocha-to-tap",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mocha-to-tap": "./cli.js"
+  },
+  "scripts": {
+    "test": "tap",
+    "test:update": "tap --snapshot"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "recast": "^0.23.4",
+    "sade": "^1.8.1",
+    "tiny-glob": "^0.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "standard": "^17.1.0",
+    "tap": "^18.7.0"
+  }
+}
