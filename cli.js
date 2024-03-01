@@ -40,7 +40,7 @@ async function transformWithGlob (globPattern, options) {
     async (file) => {
       const isTypescript = file.endsWith('.ts') || file.endsWith('.tsx')
       const source = await fs.promises.readFile(file, 'utf8')
-      const transformedCode = transform(source, { typescript: true })
+      const transformedCode = transform(source, { typescript: isTypescript })
 
       if (options.dry) {
         console.log(`
